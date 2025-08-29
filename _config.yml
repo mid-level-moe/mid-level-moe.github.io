@@ -1,0 +1,77 @@
+# GitHub Pages Configuration
+title: "Mid-Level MoE: Spatially-Grounded Robot Representations"
+description: "A novel approach to robot learning using spatially-grounded mid-level representations for improved generalization in dexterous bimanual tasks."
+url: "https://mid-level-moe.github.io"
+baseurl: ""
+
+# SEO and Social Media
+author:
+  name: "Jonathan Yang, Chuyuan Kelly Fu, Dhruv Shah, Dorsa Sadigh, Fei Xia, Tingnan Zhang"
+  email: ""
+  
+twitter:
+  username: ""
+  card: "summary_large_image"
+
+social:
+  name: "Mid-Level MoE Research Team"
+  links:
+    - "https://github.com/mid-level-moe"
+
+# GitHub Pages specific
+github:
+  repository_name: "mid-level-moe.github.io"
+  owner_name: "mid-level-moe"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - "Bridging_Perception_and_Action*"
+
+# Include files
+include:
+  - _pages
+  - assets
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  
+# SEO Tag settings
+tag_transformer: 
+  h1: h2
+  h2: h3
+  h3: h4
+  h4: h5
+  h5: h6
